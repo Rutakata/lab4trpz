@@ -140,7 +140,7 @@ class Country:
 class Map:
     def __init__(self, countries_data):
         self.countries = []
-        self.grid: List[List[City]] = [[None] * (grid_size + 5) for i in range((grid_size + 5))]
+        self.grid: List[List[City]] = [[None] * (grid_size + 2) for i in range((grid_size + 2))]
         self.__initialize_grid(countries_data)
         self.__validate_foreign_neighbours()
 
