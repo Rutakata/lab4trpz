@@ -50,7 +50,7 @@ def parse_input():
         counties_len = int(lines[line_index])
         if counties_len == 0:
             return cases
-        if counties_len < max_countries_amount or counties_len < 1:
+        if counties_len > max_countries_amount or counties_len < 1:
             raise Exception("Error in input for case %i: invalid amount of countries" % (case + 1))
         line_index += 1
 
