@@ -44,7 +44,7 @@ def parse_input():
     cases = []
 
     lines = read_lines(input_filepath)
-    line_index = 10
+    line_index = 0
     case = 0
     while line_index < len(lines):
         counties_len = int(lines[line_index])
